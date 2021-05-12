@@ -4,7 +4,7 @@ let buffer = "0";
 let previousOperator;
 
 function buttonClick(value) {
-    if (isNaN(parseInt(value))) {
+    if (isNaN(parseInt(value))) {   //parsea la cadena value y si corresponde a un numero, va a adherir la nueva cadena al buffer, si corresponde a simbolo lo manejara de la manera correspondiente
         handleSymbol(value);
     } else {
         handleNumber(value);
@@ -46,7 +46,7 @@ function handleSymbol(value) {
             }
             flushOperation(parseInt(buffer));
             previousOperator = null;
-            buffer = +runningTotal; // UNARY PLUS OPERATOR - define que el buffer es una variable tipo number (lo parsea) concretamente el runningTotal que se ha manejado en la funcion flushOperation(intBuffer)
+            buffer = +runningTotal.toFixed(2); // UNARY PLUS OPERATOR - define que el buffer es una variable tipo number (lo parsea igual que parseInt(runningTotal)) concretamente el runningTotal que se ha manejado en la funcion flushOperation(intBuffer)
             runningTotal = 0;
             break;
     }
