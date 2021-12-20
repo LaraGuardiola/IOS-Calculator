@@ -9,6 +9,7 @@
 
 .calc{
     min-width: 100vw;
+    
     background-color: black;
     color: white;
 }
@@ -31,7 +32,7 @@
 /* ///// botones ///// */
 
 .calc-button{
-    height: 120px;
+    height: 15vh;
     width: 24.5%;
     font-size: 40px;
     border: none;
