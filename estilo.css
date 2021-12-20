@@ -8,7 +8,7 @@
 /* ///// medidas de la calculadora /////// */
 
 .calc{
-    width: 600px;
+    min-width: 100vw;
     background-color: black;
     color: white;
 }
